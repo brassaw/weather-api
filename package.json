@@ -1,0 +1,10 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "Weather Station Server",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Andrew Brassaw <brassaw@rocketmail.com>",
+  "license": "MIT"
+}
