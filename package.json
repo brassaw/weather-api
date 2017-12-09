@@ -4,7 +4,17 @@
   "description": "Weather Station Server",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/server.js"
   },
   "author": "Andrew Brassaw <brassaw@rocketmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "16.1.1"
+  },
+  "devDependencies": {
+    "@types/hapi": "^16.1.11",
+    "@types/node": "^8.0.57",
+    "typescript": "2.6.2"
+  }
 }
