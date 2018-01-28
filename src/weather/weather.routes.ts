@@ -53,6 +53,7 @@ export const routes: RouteConfiguration[] = [
     method: 'POST',
     path: '/add',
     handler: function (request: Request, reply: ReplyNoContinue) {
+      console.error(`payload: ${request.payload}`);
       const newData: WeatherRecord[] = JSON.parse(request.payload);
       // Since the data could come in a block that crosses a day boundary, load
       // and save each item sequentially. Storing these entries locally until
